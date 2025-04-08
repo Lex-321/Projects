@@ -1,0 +1,30 @@
+
+.root {/*-fx-cursor: url('/resources/cursor.png'), auto;*/
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("/font/bradley_font.ttf");
+}
+
+.root {
+    -fx-font-family: "CustomFont";
+    -fx-font-size: 14px;
+}
+
+.button, .label, .text-field {
+    -fx-font-family: "CustomFont";
+    -fx-font-size: 14px;
+    -fx-text-fill: #4F4F4E;
+}
+
+.text {
+    -fx-font-family: "CustomFont";
+    -fx-font-size: 14px;
+    -fx-fill: #4F4F4E;
+}
+
+
+
+
+
