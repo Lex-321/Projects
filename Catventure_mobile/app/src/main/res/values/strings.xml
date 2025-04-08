@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Catventure</string>
+    <string name="name">Catventure</string>
+    <string name="start_Game">Start Game</string>
+    <string name="load_Game">Load Game</string>
+    <string name="credits">Credits</string>
+    <string name="title_screen">Title screen</string>
+    <string name="return_">return</string>
+    <string name="empty_save">Empty save</string>
+    <string name="empty_save_1">Empty save 1</string>
+    <string name="empty_save_2">Empty save 2</string>
+    <string name="empty_save_3">Empty save 3</string>
+    <string name="edit_name">Edit name</string>
+    <string name="avatar">Avatar</string>
+    <string name="left_arrow">Left Arrow</string>
+    <string name="right_arrow">Right Arrow</string>
+    <string name="save_button">Save</string>
+    <string name="delete_button">Delete</string>
+    <string name="level_1">Level 1</string>
+    <string name="credits_info">Credits info</string>
+    <string name="game_over">Game Over!</string>
+    <string name="game_completed">Game Completed!</string>
+    <string name="next_level">Next Level</string>
+    <string name="main_menu">Go back to main menu</string>
+    <string name="start_game_instructions">In order to create a player, choose one of the empty boxes below.
+        \nIf all boxes are occupied, proceed to Load Game in order to delete a player.</string>
+    <string name="load_game_instructions">In order to start the game, choose one of the created players below.
+        \nIf you would like to delete a player, click on the corresponding X.</string>
+</resources>

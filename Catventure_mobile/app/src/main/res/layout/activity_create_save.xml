@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSave">
+
+    <ImageView
+        android:id="@+id/Title_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/title_screen"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background_yellow" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="55dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/bradley_font"
+        android:text="Name:"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/savebutton"
+        app:layout_constraintEnd_toStartOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="@+id/right_next_button_guideline"
+        app:layout_constraintTop_toTopOf="@+id/bottom_return_create_save_guideline" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:fontFamily="@font/bradley_font"
+        android:hint="@string/edit_name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/savebutton"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/bottom_return_create_save_guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="406dp" />
+
+    <ImageButton
+        android:id="@+id/savebutton"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/save_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/end_guideline"
+        app:layout_constraintStart_toStartOf="@+id/right_next_button_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        app:layout_constraintVertical_bias="0.506"
+        app:srcCompat="@drawable/save_button" />
+
+    <ImageButton
+        android:id="@+id/leftArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/left_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/avatar"
+        app:layout_constraintStart_toStartOf="@+id/right_return_create_save_guideline"
+        app:layout_constraintTop_toTopOf="@+id/bottom_return_create_save_guideline"
+        app:srcCompat="@drawable/previous_arrow" />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:contentDescription="@string/avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rightArrow"
+        app:layout_constraintStart_toEndOf="@+id/leftArrow"
+        app:layout_constraintTop_toTopOf="@+id/bottom_return_create_save_guideline"
+        app:srcCompat="@drawable/create_instructions" />
+
+    <ImageButton
+        android:id="@+id/rightArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/right_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/right_next_button_guideline"
+        app:layout_constraintStart_toEndOf="@+id/avatar"
+        app:layout_constraintTop_toTopOf="@+id/bottom_return_create_save_guideline"
+        app:srcCompat="@drawable/next_arrow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_return_create_save_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_return_create_save_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="85dp" />
+
+
+    <ImageButton
+        android:id="@+id/Return_button_create_save"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/return_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_next_button_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="330dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="75dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

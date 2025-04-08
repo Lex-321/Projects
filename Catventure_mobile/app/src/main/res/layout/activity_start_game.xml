@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/empty_save"
+    tools:context=".StartGame">
+
+    <ImageView
+        android:id="@+id/Title_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/title_screen"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background_yellow" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_save_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_save_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="50dp" />
+
+    <ImageButton
+        android:id="@+id/Return_button_Start"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/return_"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_return_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/right_return_create_save_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/return_button" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_return_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="85dp" />
+
+    <ImageButton
+        android:id="@+id/Empty_save_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/empty_save_1"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_save_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_2"
+        app:layout_constraintStart_toStartOf="@+id/left_save_guideline"
+        app:layout_constraintTop_toTopOf="@+id/top_save_guideline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/empty_save" />
+
+    <ImageButton
+        android:id="@+id/Empty_save_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/empty_save_2"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_save_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_3"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_1"
+        app:layout_constraintTop_toTopOf="@+id/top_save_guideline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/empty_save" />
+
+    <ImageButton
+        android:id="@+id/Empty_save_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/empty_save_3"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_save_guideline"
+        app:layout_constraintEnd_toEndOf="@+id/right_save_guideline"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_2"
+        app:layout_constraintTop_toTopOf="@+id/top_save_guideline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/empty_save" />
+
+    <ImageButton
+        android:id="@+id/Save1"
+        android:layout_width="121.5dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/avatar"
+        android:scaleType="centerInside"
+        android:src="@drawable/black_cat"
+        app:layout_constraintBottom_toBottomOf="@+id/Empty_save_1"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_1"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_1"
+        app:layout_constraintTop_toTopOf="@+id/Empty_save_1" />
+
+    <TextView
+        android:id="@+id/SavedName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bradley_font"
+        android:text="Nick gracza"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toTopOf="@+id/Save1"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_1"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_1"
+        app:layout_constraintTop_toTopOf="@+id/Empty_save_1" />
+
+
+    <ImageButton
+        android:id="@+id/Save2"
+        android:layout_width="121.5dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/avatar"
+        android:scaleType="centerInside"
+        android:src="@drawable/black_cat"
+        app:layout_constraintBottom_toBottomOf="@+id/Empty_save_2"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_2"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_2"
+        app:layout_constraintTop_toTopOf="@+id/Empty_save_2" />
+
+    <TextView
+        android:id="@+id/SavedName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bradley_font"
+        android:text="Nick gracza"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toTopOf="@+id/Save2"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_2"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_2"
+        app:layout_constraintTop_toTopOf="@+id/Empty_save_2" />
+
+
+    <ImageButton
+        android:id="@+id/Save3"
+        android:layout_width="121.5dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/avatar"
+        android:scaleType="centerInside"
+        android:src="@drawable/black_cat"
+        app:layout_constraintBottom_toBottomOf="@+id/Empty_save_3"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_3"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_3"
+        app:layout_constraintTop_toTopOf="@+id/Empty_save_3" />
+
+    <TextView
+        android:id="@+id/SavedName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bradley_font"
+        android:text="Nick gracza"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toTopOf="@+id/Save3"
+        app:layout_constraintEnd_toStartOf="@+id/Empty_save_3"
+        app:layout_constraintStart_toEndOf="@+id/Empty_save_3"
+        app:layout_constraintTop_toTopOf="@+id/Empty_save_3" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_save_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="66dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_save_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="98dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_return_create_save_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="75dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/start_game_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/bradley_font"
+        android:text="@string/start_game_instructions"
+        android:textSize="18sp"
+        android:textColor="@color/text_color"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_return_guideline"
+        app:layout_constraintEnd_toStartOf="@+id/right_save_guideline"
+        app:layout_constraintStart_toStartOf="@+id/left_save_guideline"
+        app:layout_constraintTop_toTopOf="@+id/Title_screen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
