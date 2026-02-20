@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'D_App/style.css' %}">
+    <title>Symulator Algorytmu Dijkstry</title>
+</head>
+<body>
+  <div id="graph-area">
+    <canvas id="graphCanvas"></canvas>
+    <div id="footer">Obszar rysowania grafu</div>
+  </div>
+  <div id="control-panel">
+    <h2>Sterowanie grafem</h2>
+    <button id="add-node">➕ Dodaj węzeł</button>
+    <button id="add-edge">🔗 Dodaj krawędź</button>
+    <button id="generate-graph" class="secondary">🔄 Generuj graf</button>
+    <button id="run-dijkstra" class="success">▶️ Uruchom</button>
+    <div id="resultPanel">
+        <h3>Wyniki:</h3>
+        <pre id="results"></pre>
+    </div>
+    <button id="highlight-mode">Pokaż ścieżkę</button>
+  </div>
+  <script src="{% static 'D_App/script.js' %}"></script>
+</body>
+</html>
